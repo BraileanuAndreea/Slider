@@ -1,0 +1,75 @@
+<!--
+
+
+	aspect interior pt copii si exterior!
+INLINE- width cat content!! nu poate fi specificat
+	padding doar pe latime
+	padding margin si border se aplica pe orizontala !!!
+	se aplica si pe verticala. diferenta e ca nu afecteaza lay-outul
+
+INLINE-BLOCK
+	width: cat content-ul dar putem sa il specificam
+	ca un elem inline dar putem sa ii dam proprietati
+	pe acelasi rand
+
+BLOCK	
+	width- maxim din parinte
+	padding.. afecteaza lay-outul
+	unul sub altul!!
+	imping elementul de dupa ele dedesubt, chiar daca au loc
+	le fac float ca sa le pun unul langa altul
+
+
+STATIC- ed default
+	top 100px - nu s eintampla nimic
+
+
+RELATIVE
+	top 100 px fata de locul in care era
+	impinge si ce e sub el
+	ramane gol
+
+ABSOLUT- cauta in arbore urmatorul element parinte care nu e static	
+	scoate din flow
+	elementul e deasupra paginii
+	top 100 e pozitionat de primul parinte ce are un altfel de position diferit de static sau de body
+	
+
+
+FIXED-
+	se raporteaza la browser
+	diferenta la scroll
+
+
+img e inline block
+pt a centra display block si margin 0 auto
+saun text-align: center
+-->
+
+
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="C18.css">
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="slider">
+				<div class="image-container">
+					<img class="active" src="1.jpg" alt="1"> 
+					<img src="2.jpg" alt="2"> 
+					<img src="3.jpg" alt="3"> 
+					<img src="4.jpg" alt="4"> 
+					<img src="5.jpg" alt="5">
+				</div> 
+				<button class="prev">
+					<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#05B4AF" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+					</svg>
+				</button>
+				<button class="next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path fill="#05B4AF" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg></button>
+			</div>
+		</div>
+		<script src="C18.js"></script>
+	</body>
+</html>
